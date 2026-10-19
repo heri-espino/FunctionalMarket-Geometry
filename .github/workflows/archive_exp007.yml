@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'src/market_geometry/similarity_targets.py'
+      - 'market_geometry/notes/007-similarity_targets/README.md'
       - 'market_geometry/code/007-similarity_targets/run.py'
 permissions:
   contents: write

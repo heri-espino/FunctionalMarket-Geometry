@@ -54,7 +54,7 @@ python scripts/validate_research.py
 
 The publishing command creates an immutable, timestamped pair of results and figures directories and appends the **actual** generated figures and numerical summaries below. Never add figure links before they exist.
 
-## Figures planned
+## Figure plan and reproduction status
 
 - price_level_invariance.png/.svg: raw and rebased prices.
 - scenario_returns.png/.svg: contemporaneous factor, delayed relationship, and volatility example.
