@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.venv/
+.env
+.env.*
+.ipynb_checkpoints/
+artifacts/
+docs/_build/
+build/
+dist/
+.DS_Store
+Thumbs.db
+*.log
+# Do not accidentally commit private financial data or licensed full-text archives.
+data/
+secrets/
+*.parquet
+*.feather

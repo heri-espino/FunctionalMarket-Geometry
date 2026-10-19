@@ -1,0 +1,167 @@
+{
+  "status": "exploratory_synthetic_not_confirmatory",
+  "seed_start": 20261019,
+  "n_independent_simulated_panels": 12,
+  "methods": [
+    "correlation",
+    "lag1_crosscorr",
+    "spline_sobolev",
+    "pls_zero_fixed",
+    "pls_guerrero_fixed",
+    "pls_zero_gcv",
+    "pls_guerrero_gcv",
+    "pls_zero_forecast_cv",
+    "pls_guerrero_forecast_cv"
+  ],
+  "auroc_by_method": {
+    "correlation": {
+      "mean": 0.40277777777777773,
+      "sd_across_seeds": 0.23543476054088824,
+      "min": 0.034482758620689655,
+      "max": 0.7567049808429118
+    },
+    "lag1_crosscorr": {
+      "mean": 1.0,
+      "sd_across_seeds": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "spline_sobolev": {
+      "mean": 1.0,
+      "sd_across_seeds": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pls_zero_fixed": {
+      "mean": 1.0,
+      "sd_across_seeds": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pls_guerrero_fixed": {
+      "mean": 1.0,
+      "sd_across_seeds": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pls_zero_gcv": {
+      "mean": 1.0,
+      "sd_across_seeds": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "pls_guerrero_gcv": {
+      "mean": 0.9998403575989783,
+      "sd_across_seeds": 0.0005530174992237841,
+      "min": 0.9980842911877394,
+      "max": 1.0
+    },
+    "pls_zero_forecast_cv": {
+      "mean": 0.9833971902937421,
+      "sd_across_seeds": 0.04817633427816447,
+      "min": 0.8333333333333334,
+      "max": 1.0
+    },
+    "pls_guerrero_forecast_cv": {
+      "mean": 0.9974457215836526,
+      "sd_across_seeds": 0.008848279987580483,
+      "min": 0.9693486590038314,
+      "max": 1.0
+    }
+  },
+  "comparison": {
+    "spline_sobolev": {
+      "mean_paired_auroc_difference_vs_correlation": 0.5972222222222222,
+      "mean_paired_auroc_difference_vs_lag1": 0.0,
+      "n_seed_wins_vs_lag1": 0
+    },
+    "pls_zero_fixed": {
+      "mean_paired_auroc_difference_vs_correlation": 0.5972222222222222,
+      "mean_paired_auroc_difference_vs_lag1": 0.0,
+      "n_seed_wins_vs_lag1": 0
+    },
+    "pls_guerrero_fixed": {
+      "mean_paired_auroc_difference_vs_correlation": 0.5972222222222222,
+      "mean_paired_auroc_difference_vs_lag1": 0.0,
+      "n_seed_wins_vs_lag1": 0
+    },
+    "pls_zero_gcv": {
+      "mean_paired_auroc_difference_vs_correlation": 0.5972222222222222,
+      "mean_paired_auroc_difference_vs_lag1": 0.0,
+      "n_seed_wins_vs_lag1": 0
+    },
+    "pls_guerrero_gcv": {
+      "mean_paired_auroc_difference_vs_correlation": 0.5970625798212005,
+      "mean_paired_auroc_difference_vs_lag1": -0.0001596424010217127,
+      "n_seed_wins_vs_lag1": 0
+    },
+    "pls_zero_forecast_cv": {
+      "mean_paired_auroc_difference_vs_correlation": 0.5806194125159643,
+      "mean_paired_auroc_difference_vs_lag1": -0.016602809706257982,
+      "n_seed_wins_vs_lag1": 0
+    },
+    "pls_guerrero_forecast_cv": {
+      "mean_paired_auroc_difference_vs_correlation": 0.594667943805875,
+      "mean_paired_auroc_difference_vs_lag1": -0.002554278416347385,
+      "n_seed_wins_vs_lag1": 0
+    }
+  },
+  "config_first_seed": {
+    "simulation": {
+      "seed": 20261019,
+      "n_assets": 12,
+      "n_groups": 3,
+      "n_steps": 720,
+      "boundary": 360,
+      "group_strength": 0.7,
+      "phi_before": 0.82,
+      "phi_after": -0.65
+    },
+    "rolling": {
+      "window": 80,
+      "stride": 10
+    },
+    "pls": {
+      "order": 2,
+      "fixed_s": 0.5,
+      "derivative_weight": 0.75,
+      "grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.35,
+        0.5,
+        0.65,
+        0.8,
+        0.9,
+        0.96,
+        1.0
+      ],
+      "cv_window": 40,
+      "cv_stride": 5
+    },
+    "spline": {
+      "n_basis": 36,
+      "degree": 3,
+      "ridge": 0.02,
+      "derivative_weight": 0.75
+    }
+  },
+  "limitations": [
+    "Regime boundary is used only to define evaluation regions (oracle evaluation design).",
+    "Small number of independent synthetic panels; overlapping windows are not independent replicates.",
+    "S selects historical return-forecast fit, NOT regime-detection power; fairness for regime detection unproved.",
+    "GCV is potentially biased by autocorrelation; period stationary factors are synthetic.",
+    "Lag-one cross-correlation is an intentionally strong conventional competitor.",
+    "Hyperparameter grid and preprocessing not adapted after viewing evaluation results.",
+    "No real prices, trading backtests or evidence of causal dependence."
+  ],
+  "run_id": "run_20261018T214129777862Z_s20261019_n12",
+  "run_utc": "2026-10-18T21:41:29.778566+00:00",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

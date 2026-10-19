@@ -1,0 +1,28 @@
+name: Validation
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e '.[dev]'
+      - run: python -m pytest -q
+      - run: python -m ruff check .
+      - run: python market_geometry/code/001-temporal_regime_pilot/run.py --quick
+      - run: python market_geometry/code/002-guerrero_smoothing/run.py --quick
+      - run: python market_geometry/code/003-order_lambda_loocv/run.py --quick
+      - run: python market_geometry/code/004-cross_family_methods/run.py --quick
+      - run: python market_geometry/code/005-orthogonal_polynomial_geometry/run.py --quick --seeds 1
+      - run: python market_geometry/code/006-functional_pca_graphs/run.py --quick --seeds 1
+      - run: python scripts/validate_research.py
+      - run: python -m sphinx -b html -W docs docs/_build

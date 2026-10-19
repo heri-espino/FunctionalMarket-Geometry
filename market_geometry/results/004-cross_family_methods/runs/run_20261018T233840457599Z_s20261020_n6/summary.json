@@ -1,0 +1,222 @@
+{
+  "status": "exploratory_synthetic_only",
+  "seed_start": 20261020,
+  "n_seeds": 6,
+  "n_observations": 48,
+  "n_candidate_configurations": 49,
+  "by_family": {
+    "PLS order 1": {
+      "mean_observed_nested_loocv_rmse": 0.2495915063316068,
+      "mean_latent_oracle_diagnostic_rmse": 0.18004483350841918,
+      "per_seed_mean_observed_rmse": [
+        0.2521776491922223,
+        0.2596175001322861,
+        0.23793945053520293,
+        0.23570134496128253,
+        0.27578490856998755,
+        0.23632818459865945
+      ],
+      "between_seed_sd": 0.016111646085836255
+    },
+    "PLS order 2": {
+      "mean_observed_nested_loocv_rmse": 0.2545311272970315,
+      "mean_latent_oracle_diagnostic_rmse": 0.1956453156933734,
+      "per_seed_mean_observed_rmse": [
+        0.25885358011518067,
+        0.27457593490814614,
+        0.23901080637252897,
+        0.23979783889820752,
+        0.2873376019525381,
+        0.22761100153558744
+      ],
+      "between_seed_sd": 0.023149021618671307
+    },
+    "PLS order 3": {
+      "mean_observed_nested_loocv_rmse": 0.2602269107743497,
+      "mean_latent_oracle_diagnostic_rmse": 0.19897502321370067,
+      "per_seed_mean_observed_rmse": [
+        0.26410836330138265,
+        0.27655798675114973,
+        0.25372550361721213,
+        0.24831340178007377,
+        0.28532335640994105,
+        0.23333285278633883
+      ],
+      "between_seed_sd": 0.01907402236793216
+    },
+    "PLS order 4": {
+      "mean_observed_nested_loocv_rmse": 0.2726365897412512,
+      "mean_latent_oracle_diagnostic_rmse": 0.21028683018108815,
+      "per_seed_mean_observed_rmse": [
+        0.26796993868181385,
+        0.2786759582214592,
+        0.2771896995528077,
+        0.26073745896887635,
+        0.2992372745318877,
+        0.2520092084906624
+      ],
+      "between_seed_sd": 0.01645391755438437
+    },
+    "B-spline degree 1": {
+      "mean_observed_nested_loocv_rmse": 0.2652311249094151,
+      "mean_latent_oracle_diagnostic_rmse": 0.20024571583251963,
+      "per_seed_mean_observed_rmse": [
+        0.2649383399837546,
+        0.27037382158549983,
+        0.26723867324849543,
+        0.2592809052925287,
+        0.28375200948720436,
+        0.24580299985900755
+      ],
+      "between_seed_sd": 0.01254148017146219
+    },
+    "B-spline degree 3": {
+      "mean_observed_nested_loocv_rmse": 0.2871425061351791,
+      "mean_latent_oracle_diagnostic_rmse": 0.21172451532041517,
+      "per_seed_mean_observed_rmse": [
+        0.28986040084423914,
+        0.2759015529207318,
+        0.30447580943553837,
+        0.2813813630358008,
+        0.31721331138073994,
+        0.2540225991940246
+      ],
+      "between_seed_sd": 0.022219638691211307
+    },
+    "P-spline penalty 1": {
+      "mean_observed_nested_loocv_rmse": 0.26337613768008167,
+      "mean_latent_oracle_diagnostic_rmse": 0.17502588946373895,
+      "per_seed_mean_observed_rmse": [
+        0.26574073603990567,
+        0.26252120059976086,
+        0.2535765893565969,
+        0.26784143988690773,
+        0.28917241272802785,
+        0.24140444746929124
+      ],
+      "between_seed_sd": 0.015940484879861237
+    },
+    "P-spline penalty 2": {
+      "mean_observed_nested_loocv_rmse": 0.26839219198748326,
+      "mean_latent_oracle_diagnostic_rmse": 0.1752362684008907,
+      "per_seed_mean_observed_rmse": [
+        0.2703353542241763,
+        0.2631710937898358,
+        0.2552436616256643,
+        0.2758615696305523,
+        0.2951931322707406,
+        0.25054834038393037
+      ],
+      "between_seed_sd": 0.016102202576258856
+    },
+    "P-spline penalty 3": {
+      "mean_observed_nested_loocv_rmse": 0.279777956837354,
+      "mean_latent_oracle_diagnostic_rmse": 0.18266997976990237,
+      "per_seed_mean_observed_rmse": [
+        0.2813475979559457,
+        0.27051352871779394,
+        0.2687638491782291,
+        0.2894909619366102,
+        0.3054168684315548,
+        0.2631349348039902
+      ],
+      "between_seed_sd": 0.015737156079463136
+    },
+    "Natural cubic smoothing spline": {
+      "mean_observed_nested_loocv_rmse": 0.25513317958965137,
+      "mean_latent_oracle_diagnostic_rmse": 0.19603376495176109,
+      "per_seed_mean_observed_rmse": [
+        0.254894698846179,
+        0.2755812370714786,
+        0.24765055138945657,
+        0.23460021370419204,
+        0.28431369783999616,
+        0.23375867868660577
+      ],
+      "between_seed_sd": 0.02099592472311666
+    },
+    "RBF kernel ridge": {
+      "mean_observed_nested_loocv_rmse": 0.2531640917596483,
+      "mean_latent_oracle_diagnostic_rmse": 0.18579605383973066,
+      "per_seed_mean_observed_rmse": [
+        0.26404944545220543,
+        0.26723263892219784,
+        0.24587128058265448,
+        0.23633535720102075,
+        0.28308778863195694,
+        0.22240803976785445
+      ],
+      "between_seed_sd": 0.022334586249190824
+    },
+    "Polynomial regression": {
+      "mean_observed_nested_loocv_rmse": 0.3076008695668559,
+      "mean_latent_oracle_diagnostic_rmse": 0.18173230702585808,
+      "per_seed_mean_observed_rmse": [
+        0.30578762141795646,
+        0.29394360923873886,
+        0.3026334763332059,
+        0.31121444622703276,
+        0.3334388663754635,
+        0.29858719780873777
+      ],
+      "between_seed_sd": 0.013974189908405038
+    },
+    "All families (nested selection)": {
+      "mean_observed_nested_loocv_rmse": 0.25575196506805753,
+      "mean_latent_oracle_diagnostic_rmse": 0.19820805482658224,
+      "per_seed_mean_observed_rmse": [
+        0.2588306970127481,
+        0.2706731301676249,
+        0.24213192269019462,
+        0.2526320564384287,
+        0.28070214490146345,
+        0.22954183919788562
+      ],
+      "between_seed_sd": 0.01863781808258343
+    }
+  },
+  "all_family_inner_selected_counts": {
+    "P-spline penalty 3": 96,
+    "P-spline penalty 2": 16,
+    "RBF kernel ridge": 926,
+    "PLS order 1": 472,
+    "PLS order 3": 104,
+    "B-spline degree 3": 53,
+    "PLS order 2": 54,
+    "PLS order 4": 13,
+    "Natural cubic smoothing spline": 173,
+    "B-spline degree 1": 163,
+    "Polynomial regression": 183,
+    "P-spline penalty 1": 51
+  },
+  "dgp": {
+    "scenarios": [
+      "low_frequency",
+      "oscillatory",
+      "slope_break",
+      "curved"
+    ],
+    "noise": [
+      "iid",
+      "ar1"
+    ],
+    "generating_code": "Identical four signals and two noise types to EXP-003"
+  },
+  "limitations": [
+    "Missing-point reconstruction is NOT chronological forecasting or regime classification.",
+    "Known latent functions are used ONLY for diagnostic evaluation, never for selection.",
+    "The eight scenarios within each seed are dependent; avoid treating folds as independent.",
+    "Family candidate grids differ in breadth. Results are exploratory, not an omnibus hypothesis test.",
+    "A post-hoc minimum over each family's test RMSE is NOT an unbiased family-selector estimate.",
+    "The separately evaluated all-family selector IS nested within outer LOOCV.",
+    "Guerrero's mu plug-in, L1 trend filtering, LOESS, wavelets and Kalman fitting are not yet scored.",
+    "No real stocks have been analyzed in EXP-004."
+  ],
+  "run_id": "run_20261018T233840457599Z_s20261020_n6",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

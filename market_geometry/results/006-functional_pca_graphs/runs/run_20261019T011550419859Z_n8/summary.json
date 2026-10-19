@@ -1,0 +1,523 @@
+{
+  "experiment": "006-functional_pca_graphs",
+  "evidence": "exploratory synthetic, not independently confirmed",
+  "n_independent_seeds": 8,
+  "config": {
+    "asset_count": 12,
+    "n_steps": 480,
+    "boundary": 240,
+    "window": 64,
+    "stride": 12,
+    "legendre_degree": 7,
+    "pls_difference_order": 1,
+    "fixed_guerrero_s": 0.5,
+    "hilbert_derivative_weight": 0.01,
+    "fpca_components": [
+      2,
+      3,
+      5
+    ],
+    "graph_k": 3,
+    "bandwidth": "median positive pairwise distance among calibration windows only, per method",
+    "reference": "first half of pre-switch window endpoints",
+    "comparison": "pre vs post excluding boundary overlap",
+    "notes": "cross-sectional window-local FPCA, not dynamic long-run-covariance FPCA; no hyperparameter optimized by labels"
+  },
+  "aggregate": [
+    {
+      "dgp": "ar1_switch",
+      "method": "fpca_explained_spectrum",
+      "mean_auroc": 0.6933333333333334,
+      "sd_seed_auroc": 0.1374137536149118,
+      "mean_post_threshold_fraction": 0.6166666666666667,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "fpca_pls_k2_graph_edges",
+      "mean_auroc": 0.9983333333333333,
+      "sd_seed_auroc": 0.004714045207910308,
+      "mean_post_threshold_fraction": 1.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "fpca_pls_k2_graph_spectrum",
+      "mean_auroc": 0.8825000000000001,
+      "sd_seed_auroc": 0.2875829762937442,
+      "mean_post_threshold_fraction": 0.8583333333333334,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "fpca_pls_k3_graph_edges",
+      "mean_auroc": 0.9983333333333333,
+      "sd_seed_auroc": 0.004714045207910308,
+      "mean_post_threshold_fraction": 1.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "fpca_pls_k3_graph_spectrum",
+      "mean_auroc": 0.8791666666666667,
+      "sd_seed_auroc": 0.2697544444813844,
+      "mean_post_threshold_fraction": 0.825,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "fpca_pls_k5_graph_edges",
+      "mean_auroc": 1.0,
+      "sd_seed_auroc": 0.0,
+      "mean_post_threshold_fraction": 1.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "fpca_pls_k5_graph_spectrum",
+      "mean_auroc": 0.8891666666666667,
+      "sd_seed_auroc": 0.28173921297360105,
+      "mean_post_threshold_fraction": 0.825,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "fpca_raw_k3_graph_edges",
+      "mean_auroc": 0.9966666666666667,
+      "sd_seed_auroc": 0.009428090415820616,
+      "mean_post_threshold_fraction": 0.9916666666666667,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "fpca_raw_k3_graph_spectrum",
+      "mean_auroc": 0.8416666666666666,
+      "sd_seed_auroc": 0.29486074194924144,
+      "mean_post_threshold_fraction": 0.7916666666666667,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "full_pls_h1_graph_edges",
+      "mean_auroc": 0.9991666666666666,
+      "sd_seed_auroc": 0.002357022603955134,
+      "mean_post_threshold_fraction": 1.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "full_pls_h1_graph_spectrum",
+      "mean_auroc": 0.8825000000000001,
+      "sd_seed_auroc": 0.27329703591746074,
+      "mean_post_threshold_fraction": 0.825,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "lag1_direct",
+      "mean_auroc": 1.0,
+      "sd_seed_auroc": 0.0,
+      "mean_post_threshold_fraction": 1.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "lag1_graph_edges",
+      "mean_auroc": 1.0,
+      "sd_seed_auroc": 0.0,
+      "mean_post_threshold_fraction": 1.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "lag1_graph_spectrum",
+      "mean_auroc": 1.0,
+      "sd_seed_auroc": 0.0,
+      "mean_post_threshold_fraction": 1.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "lag2_direct",
+      "mean_auroc": 0.5533333333333333,
+      "sd_seed_auroc": 0.2116001020193591,
+      "mean_post_threshold_fraction": 0.8166666666666667,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "lag2_graph_edges",
+      "mean_auroc": 0.5583333333333333,
+      "sd_seed_auroc": 0.2979666541479549,
+      "mean_post_threshold_fraction": 0.44166666666666665,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "lag2_graph_spectrum",
+      "mean_auroc": 0.5608333333333333,
+      "sd_seed_auroc": 0.20045780935980853,
+      "mean_post_threshold_fraction": 0.625,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "pearson_direct",
+      "mean_auroc": 0.6358333333333333,
+      "sd_seed_auroc": 0.22775474138252805,
+      "mean_post_threshold_fraction": 0.7583333333333333,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "pearson_graph_edges",
+      "mean_auroc": 0.5116666666666667,
+      "sd_seed_auroc": 0.2763652977089884,
+      "mean_post_threshold_fraction": 0.55,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_switch",
+      "method": "pearson_graph_spectrum",
+      "mean_auroc": 0.5808333333333333,
+      "sd_seed_auroc": 0.1452064758711561,
+      "mean_post_threshold_fraction": 0.44166666666666665,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "fpca_explained_spectrum",
+      "mean_auroc": 0.5691666666666666,
+      "sd_seed_auroc": 0.1531442934071479,
+      "mean_post_threshold_fraction": 0.42500000000000004,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "fpca_pls_k2_graph_edges",
+      "mean_auroc": 0.9616666666666667,
+      "sd_seed_auroc": 0.045320726538398005,
+      "mean_post_threshold_fraction": 0.9750000000000001,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "fpca_pls_k2_graph_spectrum",
+      "mean_auroc": 0.6841666666666666,
+      "sd_seed_auroc": 0.35132289674568296,
+      "mean_post_threshold_fraction": 0.6666666666666666,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "fpca_pls_k3_graph_edges",
+      "mean_auroc": 0.98,
+      "sd_seed_auroc": 0.03106572653390494,
+      "mean_post_threshold_fraction": 0.9750000000000001,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "fpca_pls_k3_graph_spectrum",
+      "mean_auroc": 0.6491666666666667,
+      "sd_seed_auroc": 0.32741289887419883,
+      "mean_post_threshold_fraction": 0.75,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "fpca_pls_k5_graph_edges",
+      "mean_auroc": 0.9800000000000001,
+      "sd_seed_auroc": 0.029814239699997178,
+      "mean_post_threshold_fraction": 0.9833333333333334,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "fpca_pls_k5_graph_spectrum",
+      "mean_auroc": 0.6691666666666667,
+      "sd_seed_auroc": 0.3314602133226144,
+      "mean_post_threshold_fraction": 0.7583333333333333,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "fpca_raw_k3_graph_edges",
+      "mean_auroc": 0.9566666666666667,
+      "sd_seed_auroc": 0.05089672082242811,
+      "mean_post_threshold_fraction": 0.9666666666666667,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "fpca_raw_k3_graph_spectrum",
+      "mean_auroc": 0.595,
+      "sd_seed_auroc": 0.30393712800146316,
+      "mean_post_threshold_fraction": 0.7166666666666667,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "full_pls_h1_graph_edges",
+      "mean_auroc": 0.9816666666666667,
+      "sd_seed_auroc": 0.033190168749003046,
+      "mean_post_threshold_fraction": 0.9833333333333334,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "full_pls_h1_graph_spectrum",
+      "mean_auroc": 0.6658333333333333,
+      "sd_seed_auroc": 0.3331511406849488,
+      "mean_post_threshold_fraction": 0.7416666666666667,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "lag1_direct",
+      "mean_auroc": 0.09083333333333332,
+      "sd_seed_auroc": 0.08379396500601084,
+      "mean_post_threshold_fraction": 0.5,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "lag1_graph_edges",
+      "mean_auroc": 0.6066666666666667,
+      "sd_seed_auroc": 0.27278691026641727,
+      "mean_post_threshold_fraction": 0.8333333333333333,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "lag1_graph_spectrum",
+      "mean_auroc": 0.49166666666666664,
+      "sd_seed_auroc": 0.22744264932100736,
+      "mean_post_threshold_fraction": 0.5833333333333334,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "lag2_direct",
+      "mean_auroc": 1.0,
+      "sd_seed_auroc": 0.0,
+      "mean_post_threshold_fraction": 1.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "lag2_graph_edges",
+      "mean_auroc": 1.0,
+      "sd_seed_auroc": 0.0,
+      "mean_post_threshold_fraction": 1.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "lag2_graph_spectrum",
+      "mean_auroc": 0.9208333333333334,
+      "sd_seed_auroc": 0.22391714737574003,
+      "mean_post_threshold_fraction": 1.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "pearson_direct",
+      "mean_auroc": 0.5141666666666667,
+      "sd_seed_auroc": 0.2692125495317721,
+      "mean_post_threshold_fraction": 0.9,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "pearson_graph_edges",
+      "mean_auroc": 0.5808333333333333,
+      "sd_seed_auroc": 0.09807269736401653,
+      "mean_post_threshold_fraction": 0.6499999999999999,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_switch",
+      "method": "pearson_graph_spectrum",
+      "mean_auroc": 0.56,
+      "sd_seed_auroc": 0.24450792826435502,
+      "mean_post_threshold_fraction": 0.43333333333333335,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "fpca_explained_spectrum",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.35,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "fpca_pls_k2_graph_edges",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.3833333333333333,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "fpca_pls_k2_graph_spectrum",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.35833333333333334,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "fpca_pls_k3_graph_edges",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.4083333333333333,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "fpca_pls_k3_graph_spectrum",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.4833333333333334,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "fpca_pls_k5_graph_edges",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.425,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "fpca_pls_k5_graph_spectrum",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.45833333333333337,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "fpca_raw_k3_graph_edges",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.425,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "fpca_raw_k3_graph_spectrum",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.4,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "full_pls_h1_graph_edges",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.39999999999999997,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "full_pls_h1_graph_spectrum",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.44166666666666665,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "lag1_direct",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.8333333333333333,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "lag1_graph_edges",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.475,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "lag1_graph_spectrum",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.33333333333333337,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "lag2_direct",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.825,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "lag2_graph_edges",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.5916666666666667,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "lag2_graph_spectrum",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.575,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "pearson_direct",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.8166666666666667,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "pearson_graph_edges",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.7083333333333333,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_null",
+      "method": "pearson_graph_spectrum",
+      "mean_auroc": null,
+      "sd_seed_auroc": null,
+      "mean_post_threshold_fraction": 0.6083333333333334,
+      "n_independent_seeds": 8
+    }
+  ],
+  "limits": [
+    "Matching lag-one and lag-two correlation baselines detect simulated AR changes directly.",
+    "No market prices, returns forecasting, or profit evaluation.",
+    "Overlapping windows correlated; independent unit is simulation seed, not each rolling window.",
+    "Negative-control exceedance quantile uses few overlapping calibration windows; not a nominal false-alarm probability.",
+    "Window-specific PCA axes may rotate: compare distances/eigenvalues, not aligned principal-score coordinates.",
+    "Model selection from these displayed results would require separate independent evaluation seeds.",
+    "A static graph spectrum is a summary, not an estimator of causal relationships or conditional dependence."
+  ],
+  "run_id": "run_20261019T011550419859Z_n8",
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  }
+}

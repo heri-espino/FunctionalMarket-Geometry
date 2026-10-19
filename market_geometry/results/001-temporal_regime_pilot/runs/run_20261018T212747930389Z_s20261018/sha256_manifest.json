@@ -1,0 +1,13 @@
+{
+  "market_geometry/figures/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/distance_delta_correlation.png": "83f3011189d3dfc5f131d8ec9a6c59ce09ee79dc9d086ccb1365085792862638",
+  "market_geometry/figures/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/distance_delta_correlation.svg": "ae0e7bd2ebedf82a7d0ad83e9d6dda3df840ffaf8310d894e1c3f732ba3253d7",
+  "market_geometry/figures/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/distance_delta_sobolev.png": "77004f8e551860ccff02b500550e4b4cac74264ae3f63b1581e10b5aa7d71e0e",
+  "market_geometry/figures/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/distance_delta_sobolev.svg": "ae208680248c52c1a63c19e7c2041ed606b3d3d5dc6696811e7bf299b1c19add",
+  "market_geometry/figures/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/network_deviation.png": "cd716037153bd8be831cc26af65d3caa1482243b1f07347b56ef0d09ac956883",
+  "market_geometry/figures/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/network_deviation.svg": "9a64a48d6d5e2a56455d5ffd9aa09c6cfdbd756b3acd2207e8c06b5a26bc7955",
+  "market_geometry/figures/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/sample_synthetic_returns.png": "90a47297b71f973588c8f15ca6521802ab8b9907d34f7a735716c097aadbcfba",
+  "market_geometry/figures/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/sample_synthetic_returns.svg": "d8d8ffbe71b61fa8c39118a532e86724e1be3b013dbe812e7aad76919eccd95d",
+  "market_geometry/results/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/summary.json": "e2aa2e103d206043759dad3e2922cd50a6550702feffdaf9216caf1258ff3463",
+  "market_geometry/results/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/synthetic_panel_and_distances.npz": "ae089d76a7585e011bb6666027abd4e7b73c750883d3d4c2164500e588caea6b",
+  "market_geometry/results/001-temporal_regime_pilot/runs/run_20261018T212747930389Z_s20261018/window_scores.csv": "34f553da0379fa8b43286665f850196fb9691f018edf68811baef4f0720976b4"
+}

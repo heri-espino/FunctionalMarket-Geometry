@@ -1,0 +1,13 @@
+{
+  "market_geometry/results/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/seed_scenario_level.csv": "2b974cfe4b4e61961b77f7901909eca81bf9060fa778b195e76e348f23d1ace8",
+  "market_geometry/results/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/summary.json": "c32c45999f58dc6d747c9755b43c4f887c0d0679f765943e849afb5bf42f76bf",
+  "market_geometry/results/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/one_panel_loo_predictions.csv": "957268a71d4b14b27153cf0577bf8b8d3de88bac21d8b67c296d68f863776115",
+  "market_geometry/figures/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/guerrero_mean_order_gallery.svg": "b2b2befbae193b4910e94a897c2a8ba6d97a65d99ae930bab87e240db1451c1a",
+  "market_geometry/figures/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/nested_loocv_rmse.png": "f7b2c279f5ecbf6b00666e38349ff3eac87a28f4ed91d47df44248ad04d6183e",
+  "market_geometry/figures/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/trend_orders_zero_mean.png": "174fc3261ff50b16f255620a175160f8bee88362e107d67e7af6f5e1ca557c1b",
+  "market_geometry/figures/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/nested_loocv_rmse.svg": "8ea0993ce485df08c8bda2b8bbb24da29fc90f1b873bb2a95a4feb7bc71b3f32",
+  "market_geometry/figures/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/guerrero_mean_order_gallery.png": "a7ba8a58d4934bfb1c39d1cbba046013e1586ab98e1cb86f0627918a02e88663",
+  "market_geometry/figures/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/latent_rmse_diagnostic.svg": "25d7481ee2f6bde7cf64d249918c085b7c9cbd252e52ed7222335b9c84949875",
+  "market_geometry/figures/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/trend_orders_zero_mean.svg": "662bd12c626c15c76c164f7bc54c340c940560e4a41d7fdc7cf564d08eb0de03",
+  "market_geometry/figures/003-order_lambda_loocv/runs/run_20261018T221417632183Z_s20261020_n4/latent_rmse_diagnostic.png": "0f52b3c46ae671035f77722f96ad9945c78478ac3d01fdf6b134daf9262b44d1"
+}

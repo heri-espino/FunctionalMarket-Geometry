@@ -1,0 +1,162 @@
+{
+  "status": "exploratory_synthetic_comparison_not_publication_evidence",
+  "n_seeds": 4,
+  "n_observations": 48,
+  "orders": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "smoothness_candidates": [
+    0.2,
+    0.35,
+    0.5,
+    0.65,
+    0.75,
+    0.85,
+    0.92,
+    0.965,
+    0.99
+  ],
+  "fixed_s": 0.75,
+  "ml_log_lambda_bounds": [
+    -12.0,
+    16.0
+  ],
+  "design": {
+    "scenarios": [
+      "low_frequency",
+      "oscillatory",
+      "slope_break",
+      "curved"
+    ],
+    "noise_processes": [
+      "iid",
+      "ar1"
+    ],
+    "outer_cv": "leave one observation out; hyperparameters nested",
+    "inner_loo": "exact two-deletion PRESS for fixed lambda",
+    "likelihood": "Gaussian profile ML of retained complete differences, mu=0",
+    "data": "synthetic daily-return-style levels, not observed stock prices"
+  },
+  "by_order_selector": {
+    "d1_fixed": {
+      "mean_observed_rmse": 0.2602246359287443,
+      "mean_latent_rmse_diagnostic": 0.16273669841650157,
+      "between_seed_sd_observed_rmse": 0.004603396546971716,
+      "n_ml_boundary_total": 0
+    },
+    "d1_inner_loocv": {
+      "mean_observed_rmse": 0.24579993720474577,
+      "mean_latent_rmse_diagnostic": 0.18008256648299362,
+      "between_seed_sd_observed_rmse": 0.012999216638975653,
+      "n_ml_boundary_total": 0
+    },
+    "d1_inner_gcv": {
+      "mean_observed_rmse": 0.24562209296778864,
+      "mean_latent_rmse_diagnostic": 0.1803785186839335,
+      "between_seed_sd_observed_rmse": 0.013365672004368886,
+      "n_ml_boundary_total": 0
+    },
+    "d1_gaussian_ml": {
+      "mean_observed_rmse": 0.2467297870346491,
+      "mean_latent_rmse_diagnostic": 0.17747433287809805,
+      "between_seed_sd_observed_rmse": 0.011476659920038658,
+      "n_ml_boundary_total": 169
+    },
+    "d2_fixed": {
+      "mean_observed_rmse": 0.2603333183445449,
+      "mean_latent_rmse_diagnostic": 0.1930727826915713,
+      "between_seed_sd_observed_rmse": 0.00743721495220321,
+      "n_ml_boundary_total": 0
+    },
+    "d2_inner_loocv": {
+      "mean_observed_rmse": 0.25248081837691444,
+      "mean_latent_rmse_diagnostic": 0.19365700858751217,
+      "between_seed_sd_observed_rmse": 0.017046857194859807,
+      "n_ml_boundary_total": 0
+    },
+    "d2_inner_gcv": {
+      "mean_observed_rmse": 0.2542504915111075,
+      "mean_latent_rmse_diagnostic": 0.19590859368631022,
+      "between_seed_sd_observed_rmse": 0.017571393637968242,
+      "n_ml_boundary_total": 0
+    },
+    "d2_gaussian_ml": {
+      "mean_observed_rmse": 0.2581183186206395,
+      "mean_latent_rmse_diagnostic": 0.18184248777570078,
+      "between_seed_sd_observed_rmse": 0.013343498593618554,
+      "n_ml_boundary_total": 195
+    },
+    "d3_fixed": {
+      "mean_observed_rmse": 0.26988084826216907,
+      "mean_latent_rmse_diagnostic": 0.2140573507119198,
+      "between_seed_sd_observed_rmse": 0.008799110668369891,
+      "n_ml_boundary_total": 0
+    },
+    "d3_inner_loocv": {
+      "mean_observed_rmse": 0.2607729552167094,
+      "mean_latent_rmse_diagnostic": 0.19907795921704244,
+      "between_seed_sd_observed_rmse": 0.013320103051230589,
+      "n_ml_boundary_total": 0
+    },
+    "d3_inner_gcv": {
+      "mean_observed_rmse": 0.26059032907100865,
+      "mean_latent_rmse_diagnostic": 0.20404315605335577,
+      "between_seed_sd_observed_rmse": 0.01610399310496712,
+      "n_ml_boundary_total": 0
+    },
+    "d3_gaussian_ml": {
+      "mean_observed_rmse": 0.26758394710155164,
+      "mean_latent_rmse_diagnostic": 0.17409004208770196,
+      "between_seed_sd_observed_rmse": 0.004454746485647613,
+      "n_ml_boundary_total": 375
+    },
+    "d4_fixed": {
+      "mean_observed_rmse": 0.2819640167151442,
+      "mean_latent_rmse_diagnostic": 0.23259046527657157,
+      "between_seed_sd_observed_rmse": 0.008176882582486186,
+      "n_ml_boundary_total": 0
+    },
+    "d4_inner_loocv": {
+      "mean_observed_rmse": 0.2727082579891006,
+      "mean_latent_rmse_diagnostic": 0.2107298708432605,
+      "between_seed_sd_observed_rmse": 0.010562288702730963,
+      "n_ml_boundary_total": 0
+    },
+    "d4_inner_gcv": {
+      "mean_observed_rmse": 0.27513797216632446,
+      "mean_latent_rmse_diagnostic": 0.21965664705224477,
+      "between_seed_sd_observed_rmse": 0.01622510903138634,
+      "n_ml_boundary_total": 0
+    },
+    "d4_gaussian_ml": {
+      "mean_observed_rmse": 0.27623053485527754,
+      "mean_latent_rmse_diagnostic": 0.17833758602632058,
+      "between_seed_sd_observed_rmse": 0.007236064040958323,
+      "n_ml_boundary_total": 523
+    }
+  },
+  "limitations": [
+    "LOOCV reconstructs individual observations; it does not measure future forecast RMSE.",
+    "Adjacent held-out points and the eight scenarios are dependent within seed.",
+    "Synthetic latent trend is supplied only to evaluation, never to model selection.",
+    "The likelihood uses zero mean for d-th differences, not Guerrero's observed-mu plug-in.",
+    "Gaussian ML assumes iid Gaussian measurement and d-th-difference errors; AR1 noise violates this.",
+    "Deleting an observation in ML removes any differences touching it: valid but not fully efficient.",
+    "Bounds on ML lambda are prespecified and boundary solutions must be disclosed.",
+    "Guerrero (2007) selected lambda by smoothness percentage, not by the presented ML rule.",
+    "Comparing orders after inspecting their outer RMSE is exploratory model comparison, not a second unbiased selection of d.",
+    "No market regime-change results are inferred from this reconstruction experiment."
+  ],
+  "run_id": "run_20261018T221417632183Z_s20261020_n4",
+  "seed_start": 20261020,
+  "utc": "2026-10-18T22:14:17.632578+00:00",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

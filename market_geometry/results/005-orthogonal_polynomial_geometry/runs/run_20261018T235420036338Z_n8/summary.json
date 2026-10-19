@@ -1,0 +1,321 @@
+{
+  "status": "exploratory synthetic representation and regime discrimination study",
+  "experiment": "005-orthogonal_polynomial_geometry",
+  "n_seeds": 8,
+  "design": {
+    "n_assets": 12,
+    "n_steps": 480,
+    "boundary": 240,
+    "window": 64,
+    "stride": 12,
+    "difference_order": [
+      1,
+      2
+    ],
+    "s_fixed": 0.5,
+    "legendre_degrees": [
+      3,
+      7
+    ],
+    "h1_normalized_time_weight": 0.01,
+    "comparison": "train-reference network deviation AUROC; not LOOCV/forecast RMSE",
+    "selection": "predeclared representations, no regime-label-based tuning"
+  },
+  "aggregate": [
+    {
+      "dgp": "ar1_memory",
+      "method": "bspline_h1",
+      "mean_auroc": 0.98,
+      "sd_auroc": 0.05656854249492382,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "lag1",
+      "mean_auroc": 1.0,
+      "sd_auroc": 0.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "lag2",
+      "mean_auroc": 0.5825,
+      "sd_auroc": 0.20982040695462198,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls1_p3_h1",
+      "mean_auroc": 0.8208333333333333,
+      "sd_auroc": 0.3246768845561374,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls1_p3_l2",
+      "mean_auroc": 0.8383333333333334,
+      "sd_auroc": 0.2998147576235848,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls1_p7_h1",
+      "mean_auroc": 0.9091666666666667,
+      "sd_auroc": 0.24102789142430062,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls1_p7_l2",
+      "mean_auroc": 0.8833333333333333,
+      "sd_auroc": 0.32998316455372223,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls2_muG_p3_h1",
+      "mean_auroc": 0.8191666666666667,
+      "sd_auroc": 0.32318725222384626,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls2_muG_p3_l2",
+      "mean_auroc": 0.8366666666666667,
+      "sd_auroc": 0.30283318264010717,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls2_muG_p7_h1",
+      "mean_auroc": 0.915,
+      "sd_auroc": 0.2037972849017703,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls2_muG_p7_l2",
+      "mean_auroc": 0.8841666666666667,
+      "sd_auroc": 0.327626141949767,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls2_p3_h1",
+      "mean_auroc": 0.8191666666666667,
+      "sd_auroc": 0.32318725222384626,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls2_p3_l2",
+      "mean_auroc": 0.8366666666666667,
+      "sd_auroc": 0.30283318264010717,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls2_p7_h1",
+      "mean_auroc": 0.9158333333333333,
+      "sd_auroc": 0.2014530549118909,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_pls2_p7_l2",
+      "mean_auroc": 0.8841666666666667,
+      "sd_auroc": 0.327626141949767,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_raw_p3_h1",
+      "mean_auroc": 0.8191666666666667,
+      "sd_auroc": 0.32318725222384626,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_raw_p3_l2",
+      "mean_auroc": 0.8366666666666667,
+      "sd_auroc": 0.30283318264010717,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_raw_p7_h1",
+      "mean_auroc": 0.9133333333333333,
+      "sd_auroc": 0.19853431193592963,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "legendre_raw_p7_l2",
+      "mean_auroc": 0.8841666666666667,
+      "sd_auroc": 0.327626141949767,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar1_memory",
+      "method": "pearson",
+      "mean_auroc": 0.5750000000000001,
+      "sd_auroc": 0.2507575822968572,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "bspline_h1",
+      "mean_auroc": 0.8491666666666666,
+      "sd_auroc": 0.25207551148825125,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "lag1",
+      "mean_auroc": 0.09249999999999999,
+      "sd_auroc": 0.08230315622021749,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "lag2",
+      "mean_auroc": 1.0,
+      "sd_auroc": 0.0,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls1_p3_h1",
+      "mean_auroc": 0.7891666666666667,
+      "sd_auroc": 0.33941008580949145,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls1_p3_l2",
+      "mean_auroc": 0.8041666666666667,
+      "sd_auroc": 0.33481456606723914,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls1_p7_h1",
+      "mean_auroc": 0.8116666666666668,
+      "sd_auroc": 0.2671840219535996,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls1_p7_l2",
+      "mean_auroc": 0.8208333333333334,
+      "sd_auroc": 0.32947167905843944,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls2_muG_p3_h1",
+      "mean_auroc": 0.7858333333333334,
+      "sd_auroc": 0.3417868545866765,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls2_muG_p3_l2",
+      "mean_auroc": 0.8025,
+      "sd_auroc": 0.337477806442542,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls2_muG_p7_h1",
+      "mean_auroc": 0.8,
+      "sd_auroc": 0.2056657791136209,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls2_muG_p7_l2",
+      "mean_auroc": 0.8183333333333334,
+      "sd_auroc": 0.3328901816153084,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls2_p3_h1",
+      "mean_auroc": 0.7858333333333334,
+      "sd_auroc": 0.3417868545866765,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls2_p3_l2",
+      "mean_auroc": 0.8025,
+      "sd_auroc": 0.337477806442542,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls2_p7_h1",
+      "mean_auroc": 0.8008333333333333,
+      "sd_auroc": 0.2063880610549742,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_pls2_p7_l2",
+      "mean_auroc": 0.8183333333333334,
+      "sd_auroc": 0.3328901816153084,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_raw_p3_h1",
+      "mean_auroc": 0.7858333333333334,
+      "sd_auroc": 0.3417868545866765,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_raw_p3_l2",
+      "mean_auroc": 0.8025,
+      "sd_auroc": 0.337477806442542,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_raw_p7_h1",
+      "mean_auroc": 0.7991666666666667,
+      "sd_auroc": 0.19174842976530557,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "legendre_raw_p7_l2",
+      "mean_auroc": 0.8183333333333334,
+      "sd_auroc": 0.33220284489861035,
+      "n_independent_seeds": 8
+    },
+    {
+      "dgp": "ar2_memory",
+      "method": "pearson",
+      "mean_auroc": 0.4475,
+      "sd_auroc": 0.20153183213844744,
+      "n_independent_seeds": 8
+    }
+  ],
+  "limits": [
+    "Synthetic labels known only for retrospective scoring; no observed equity market panels.",
+    "The two regimes are intentionally constructed; a lag-two baseline is essential.",
+    "Overlapping windows are not independent; variability is described across seeds.",
+    "Choosing the best AUROC from this method grid would be post-hoc model selection.",
+    "Polynomial projection error is not held-out trend reconstruction or out-of-time forecast RMSE."
+  ],
+  "run_id": "run_20261018T235420036338Z_n8",
+  "run_utc": "2026-10-18T23:54:20.862232+00:00",
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

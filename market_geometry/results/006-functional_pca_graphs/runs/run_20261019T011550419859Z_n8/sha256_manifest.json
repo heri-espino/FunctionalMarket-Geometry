@@ -1,0 +1,18 @@
+{
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/asset_functional_pca_maps.png": "fbadbb5142c54d03cf1cb8d46b5c8fb351661b03e38fbbe7534d86166c46ca0e",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/asset_functional_pca_maps.svg": "3dd8f50c82d304ed658695c00fdd2b21b455ecf6cdffd188cf1a2da7f2d42654",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/dynamic_network_scores.png": "dc4c32216cbc050b3afa3655011a21820724940581ab1075a80b053a3ad354f6",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/dynamic_network_scores.svg": "1d3548de86c3be1362ece79845478831ee0d5d3d7bed65b0b6abb47bf364c9ab",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/functional_pca_explained_variance.png": "60d06488f9643047be8a42d88176c91c17215d5614c1e8c2bb3060387c5f8a6a",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/functional_pca_explained_variance.svg": "6010af2cd76f69bb37bc237b1e48ce975f9dce0bfa67b26e0d51e81fc4f0d8a6",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/laplacian_eigenvalue2.png": "c1fa62220fabed1ef6464a75ad12db7399d7693ec7ae248d67982da435ff9c1f",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/laplacian_eigenvalue2.svg": "528255b3e36a6eb025a9f7480843c60099e6d550f3da29a073c7627f0233de8d",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/mean_regime_auroc.png": "a18c692672b874fe573aaf8b6769c92e357be48f370357f7d289a7fc86e2712b",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/mean_regime_auroc.svg": "1293a29adec2224ef288fdf35c1d6f2197cce35ed865e582a7ee349fbb08752f",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/null_control_scores.png": "13e43b60bebb8ac098cb29230c7b730a02b8343bd35cf7f4deba00dbd6aae018",
+  "market_geometry/figures/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/null_control_scores.svg": "396859f27bcdc9c6933e403ecc3664af962339a3f363d4224ab8c4ec9ba284e9",
+  "market_geometry/results/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/ar2_example_timeseries.npz": "f9a4fb2ea5d9b0bbfaf4e64af95f27ff391234e133fb730ea6ca6ec40c4df6c1",
+  "market_geometry/results/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/mean_metrics.csv": "7852891023e869f433832708e0d4431d1a7aaf24bf7c23273e7d353c0f0e3c22",
+  "market_geometry/results/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/seed_method_metrics.csv": "c1613f2ec25714b54323db6f7f8b5c309c7b51b35bbd102f45eda67283657895",
+  "market_geometry/results/006-functional_pca_graphs/runs/run_20261019T011550419859Z_n8/summary.json": "f933ef1af8db18c96c50188c4f82cf01555d9dc7ac0ead36650893279fcfe209"
+}

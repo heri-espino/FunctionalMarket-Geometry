@@ -1,0 +1,12 @@
+{
+  "market_geometry/results/002-guerrero_smoothing/runs/run_20261018T214129777862Z_s20261019_n12/seed_level_auroc.csv": "e594f704df1ddb06b0aa05b6f2693c18e89ceb74ebf9d59a59074c7e28ee903a",
+  "market_geometry/results/002-guerrero_smoothing/runs/run_20261018T214129777862Z_s20261019_n12/summary.json": "1cb6ad34cd5155d5f2b93dbf69de5ea7e57c601845e23932467ef199104db08e",
+  "market_geometry/results/002-guerrero_smoothing/runs/run_20261018T214129777862Z_s20261019_n12/selected_s_first_seed.csv": "4bd2a8b41a802390a25c2849e437dc22cd318737f5cde22c257021f55073ed9b",
+  "market_geometry/results/002-guerrero_smoothing/runs/run_20261018T214129777862Z_s20261019_n12/window_scores_first_seed.csv": "f0338a207d0f748cb90049832c0fd151d24e61477b556bc6f3b8ef21f4813c64",
+  "market_geometry/figures/002-guerrero_smoothing/runs/run_20261018T214129777862Z_s20261019_n12/seed_level_comparison.png": "b8d959b750295700ec9208be4195a408b039cd351d81c688fae361b789c02b7e",
+  "market_geometry/figures/002-guerrero_smoothing/runs/run_20261018T214129777862Z_s20261019_n12/network_scores_first_seed.svg": "c0247c46046965ddcdf000242f8d5cc3c348512c615b563bea1a9dba396ccf4d",
+  "market_geometry/figures/002-guerrero_smoothing/runs/run_20261018T214129777862Z_s20261019_n12/selected_s_first_seed.svg": "ef8ea872ce0438ab471f552b6382b557bf8e403c9bb3898f7d19c9bdbc4c9a8c",
+  "market_geometry/figures/002-guerrero_smoothing/runs/run_20261018T214129777862Z_s20261019_n12/selected_s_first_seed.png": "5e467d924dff9a21cddcdf6a2d0ad76e6f6198cc3662bd5ebfee6ee52130fdf5",
+  "market_geometry/figures/002-guerrero_smoothing/runs/run_20261018T214129777862Z_s20261019_n12/network_scores_first_seed.png": "3a198cf15951895f505df06f01b15ec3c2cb28556c8b579c70d050f91f17ff70",
+  "market_geometry/figures/002-guerrero_smoothing/runs/run_20261018T214129777862Z_s20261019_n12/seed_level_comparison.svg": "5c378c03a999d18637e02f97232b0cceef884f7c3953848a1189bf6d5adba9d8"
+}

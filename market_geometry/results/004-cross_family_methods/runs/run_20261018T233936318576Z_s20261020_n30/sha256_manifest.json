@@ -1,0 +1,11 @@
+{
+  "market_geometry/results/004-cross_family_methods/runs/run_20261018T233936318576Z_s20261020_n30/summary.json": "153d9098b84da7bfceb5c01e1661a774c0d50f98e6acb6b15e16dddafdb66d15",
+  "market_geometry/results/004-cross_family_methods/runs/run_20261018T233936318576Z_s20261020_n30/seed_scenario_level.csv": "2ef627e4c1d23d701921becdb3eb526f5e80199cad1ee9eddce2dd3694adf835",
+  "market_geometry/results/004-cross_family_methods/runs/run_20261018T233936318576Z_s20261020_n30/first_panel_outer_predictions.csv": "9ea0ee10cff9b0ce5bcaff767ff9819a7022c99b131212c5ab56375bc89e03d9",
+  "market_geometry/figures/004-cross_family_methods/runs/run_20261018T233936318576Z_s20261020_n30/outer_predictions_gallery.png": "eb70663fcc68079898064fab005ee816388b0d455d3af235546beb644a2a8e55",
+  "market_geometry/figures/004-cross_family_methods/runs/run_20261018T233936318576Z_s20261020_n30/all_families_outer_rmse.svg": "d1193368e47ad6f036ab17a92a57b3f4853f0ac1aea136507cc0cdd7f436d210",
+  "market_geometry/figures/004-cross_family_methods/runs/run_20261018T233936318576Z_s20261020_n30/outer_predictions_gallery.svg": "e4abc4e6e2a38d37f16f592b5f608ade2bc245734e2862b749ea2ee899fbf720",
+  "market_geometry/figures/004-cross_family_methods/runs/run_20261018T233936318576Z_s20261020_n30/scenario_rmse_heatmap.svg": "3e0209369cd41f39d5bd067294a739bd9523f282c39727c0ea65ab96f73aaf51",
+  "market_geometry/figures/004-cross_family_methods/runs/run_20261018T233936318576Z_s20261020_n30/all_families_outer_rmse.png": "d9d3f3f53cd17494851ed997b615876b5fcc46b46d5c3f8aad433a6c06aef15e",
+  "market_geometry/figures/004-cross_family_methods/runs/run_20261018T233936318576Z_s20261020_n30/scenario_rmse_heatmap.png": "9fcd2b336123f87d040760b580da7327c081a85567443d2aee01453115e6201c"
+}

@@ -1,0 +1,41 @@
+{
+  "auroc_correlation": 0.24904214559386978,
+  "auroc_sobolev": 1.0,
+  "caveat": "Single seed; overlapping windows; calibration-only baseline; post hoc, no formal significance; no financial causality or predictive validation.",
+  "description": "AR group factors change persistence, contemporaneous population covariance fixed",
+  "git_commit_sha": null,
+  "n_calibration_windows": 11,
+  "n_held_out_post_windows": 29,
+  "n_held_out_pre_windows": 18,
+  "n_transition_windows_excluded": 7,
+  "rolling": {
+    "stride": 10,
+    "window": 80
+  },
+  "run_id": "run_20261018T212747930389Z_s20261018",
+  "run_utc": "2026-10-18T21:27:47.944339+00:00",
+  "seed": 20261018,
+  "simulation": {
+    "boundary": 360,
+    "group_strength": 0.7,
+    "n_assets": 12,
+    "n_groups": 3,
+    "n_steps": 720,
+    "phi_after": -0.65,
+    "phi_before": 0.82,
+    "seed": 20261018
+  },
+  "splines": {
+    "degree": 3,
+    "derivative_weight": 0.75,
+    "n_basis": 36,
+    "ridge": 0.02
+  },
+  "type": "synthetic_exploratory_pilot_NOT_independent_confirmatory_evidence",
+  "versions": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scipy": "1.17.0"
+  }
+}
