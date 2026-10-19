@@ -23,6 +23,7 @@ try {
         python market_geometry/code/005-orthogonal_polynomial_geometry/run.py --publish --seeds 8
         if ($LASTEXITCODE -ne 0) { throw 'EXP-005 failed' }
         python market_geometry/code/006-functional_pca_graphs/run.py --publish --seeds 8
+        python market_geometry/code/007-similarity_targets/run.py --publish --seeds 100
     } else {
         python market_geometry/code/001-temporal_regime_pilot/run.py --quick
         if ($LASTEXITCODE -ne 0) { throw 'EXP-001 failed' }
@@ -35,6 +36,7 @@ try {
         python market_geometry/code/005-orthogonal_polynomial_geometry/run.py --quick --seeds 1
         if ($LASTEXITCODE -ne 0) { throw 'EXP-005 failed' }
         python market_geometry/code/006-functional_pca_graphs/run.py --quick --seeds 1
+        python market_geometry/code/007-similarity_targets/run.py --quick --seeds 1
     }
     if ($LASTEXITCODE -ne 0) { throw 'experiment failed' }
     python scripts/validate_research.py

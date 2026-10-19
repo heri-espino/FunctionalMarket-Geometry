@@ -24,5 +24,6 @@ jobs:
       - run: python market_geometry/code/004-cross_family_methods/run.py --quick
       - run: python market_geometry/code/005-orthogonal_polynomial_geometry/run.py --quick --seeds 1
       - run: python market_geometry/code/006-functional_pca_graphs/run.py --quick --seeds 1
+      - run: python market_geometry/code/007-similarity_targets/run.py --quick --seeds 1
       - run: python scripts/validate_research.py
       - run: python -m sphinx -b html -W docs docs/_build

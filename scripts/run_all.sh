@@ -10,6 +10,7 @@ if [[ "${1:-}" == "--publish" ]]; then
   python market_geometry/code/004-cross_family_methods/run.py --publish --seeds 30 --n 48
   python market_geometry/code/005-orthogonal_polynomial_geometry/run.py --publish --seeds 8
   python market_geometry/code/006-functional_pca_graphs/run.py --publish --seeds 8
+  python market_geometry/code/007-similarity_targets/run.py --publish --seeds 100
 else
   python market_geometry/code/001-temporal_regime_pilot/run.py --quick
   python market_geometry/code/002-guerrero_smoothing/run.py --quick
@@ -17,6 +18,7 @@ else
   python market_geometry/code/004-cross_family_methods/run.py --quick
   python market_geometry/code/005-orthogonal_polynomial_geometry/run.py --quick --seeds 1
   python market_geometry/code/006-functional_pca_graphs/run.py --quick --seeds 1
+  python market_geometry/code/007-similarity_targets/run.py --quick --seeds 1
 fi
 python scripts/validate_research.py
 python -m sphinx -b html -W docs docs/_build

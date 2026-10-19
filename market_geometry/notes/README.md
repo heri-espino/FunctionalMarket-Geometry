@@ -8,6 +8,7 @@
 | EXP-004 | PLS, B-spline, P-spline, natural smoothing splines, RBF kernel, polynomials; joint nested selection | Executed 6- and 30-seed comparisons | [Mathematical protocol and real plots](004-cross_family_methods/README.md) |
 
 | EXP-005 | Orthogonal Legendre trend compression; $L^2/H^1$ metrics and lag-1/lag-2 baselines | Exploratory synthetic comparison | [Math and figures](005-orthogonal_polynomial_geometry/README.md) |
+| EXP-007 | Controlled similarity targets: price scale, factor, lag and volatility | Reproducible simulation; remote archive generated on push | [Mathematics, code and figures](007-similarity_targets/README.md) |
 
 [Mathematical notes](mathematics/001-hilbert_metrics.md) · [Research context and next experiments](../history/context/NEXT_STEPS.md)
 

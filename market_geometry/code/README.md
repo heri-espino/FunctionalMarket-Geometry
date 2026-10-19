@@ -12,3 +12,5 @@
 Reusable estimators belong in [`../../src/market_geometry/`](../../src/market_geometry/), not experiment notebooks.
 
 - EXP-006: [Runnable record for functional PCA and dynamic graph spectra](006-functional_pca_graphs/) — matched simulations, no real assets.
+
+- EXP-007: [Controlled similarity simulator and metric benchmark](007-similarity_targets/run.py).

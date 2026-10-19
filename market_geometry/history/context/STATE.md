@@ -34,3 +34,7 @@ six pairs of PNG/SVG figures, CSV/JSON/NPZ evidence and SHA-256 manifest.
 The matched signed lag baseline remains best, graph eigenvalues are a lossy summary,
 and null threshold exceedance is high. Full evidence is in EXP-006 notes; no paper
 novelty, alarm calibration or financial forecasting superiority is established.
+
+## EXP-007: simulation-first metric targets
+
+Added the controlled synthetic simulator, lag/shape/risk comparisons, runner and invariance tests, preserving EXP-001–006. The GitHub workflow archives a 100-seed run to matching results and figures folders when it passes validation. No real equity risk prediction has been established.

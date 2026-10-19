@@ -5,3 +5,5 @@ One folder per experiment, then immutable `runs/<RUN_ID>/` folders containing PN
 - EXP-005: [`005-orthogonal_polynomial_geometry/`](005-orthogonal_polynomial_geometry/) — orthogonal polynomial market geometry; immutable generated run evidence.
 
 - EXP-006: [Figure record for functional PCA and dynamic graph spectra](006-functional_pca_graphs/) — matched simulations, no real assets.
+
+- EXP-007: raw/rebased price, scenario and metric-comparison plots; see [canonical experiment note](../notes/007-similarity_targets/README.md). Image links appear after generation.

@@ -169,3 +169,12 @@ python market_geometry/code/006-functional_pca_graphs/run.py --publish --seeds 8
 The complete archived run is linked from EXP-006 notes and includes CSV, JSON, NPZ,
 PNG/SVG and a checked SHA-256 manifest. There is no empirical-market edge
 or originality claim.
+
+## EXP-007: simulation targets for functional similarity
+
+[Experiment note](market_geometry/notes/007-similarity_targets/README.md) · [Executable runner](market_geometry/code/007-similarity_targets/run.py). Four controlled scenarios test price-scale invariance, noisy common factors, two-day lagged relationships, and volatility scaling. Compare raw/rebased prices, returns, Pearson, PLS-Sobolev, Legendre-Sobolev and explicit lag correlation. The 100-seed archive is generated from the committed code; the nearest pair is not a future-return forecast. The appropriate lagged-correlation baseline is expected to detect the constructed lag. Run:
+
+~~~powershell
+python market_geometry/code/007-similarity_targets/run.py --quick
+python market_geometry/code/007-similarity_targets/run.py --publish --seeds 100
+~~~

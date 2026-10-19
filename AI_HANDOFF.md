@@ -97,3 +97,12 @@ Can spline representations of aligned financial returns, equipped with time-vary
   large false-alarm diagnostics; **do not interpret as calibrated rates**.
 - Full run archives, SHA256, actual PNG and SVGs, seed results, tests; no real
   stocks or predictive claims. See full note before quoting numbers.
+
+## EXP-007 — Controlled simulation targets (2026-10-18)
+
+- [Canonical note](market_geometry/notes/007-similarity_targets/README.md); library: src/market_geometry/similarity_targets.py; runner: market_geometry/code/007-similarity_targets/run.py.
+- Four controls: same returns at different levels; noisy shared factor; exact two-day delayed factor; return path scaled twofold in volatility.
+- Separate shape invariance, lag-aware dependence and volatility/risk: a shape match is not necessarily a risk match.
+- Fixed methods and seed-range, no oracle tuning; use 100 independent seeds starting 42000. Pair-retrieval is descriptive, not held-out forecasting.
+- EXP-007 creates immutable run artifacts and appends real figures to its note only after execution.
+- Existing EXP-001–006 results must not be modified. Future research: conditional covariance, heavy tails, volatility clustering and chronological regime recovery.

@@ -1,5 +1,7 @@
 # Latest dated journal entry
 
+[2026-10-18 — Controlled similarity targets (EXP-007)](2026-10/2026-10-18-similarity-targets.md)
+
 [2026-10-18 — Functional PCA and dynamic graphs (EXP-006)](2026-10/2026-10-18-functional-pca-dynamic-graphs.md)
 
 [2026-10-18 — Orthonormal polynomial Hilbert geometry (EXP-005)](2026-10/2026-10-18-polynomial-hilbert-geometry.md)

@@ -31,3 +31,7 @@ Every new experiment creates matching numbered `code`, `notes`, `figures`, `resu
    risk/forecast value against strong simple and DCC/dynamic conditional baselines.
 5. Compare whether EXP-004's reconstruction-RMSE-best smoothing also gives the
    most useful downstream functional geometry; optimize only nested by time.
+
+### Following EXP-007
+
+First verify exact shape invariances and negative controls; then build a realistic conditional-covariance simulation atlas with heavy tails, volatility clustering, dynamic lag and time-changing factor loadings. Compare learned network recovery and calibrated out-of-time risk forecasts against lagged-correlation/DCC baselines.
