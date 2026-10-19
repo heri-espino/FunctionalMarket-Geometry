@@ -1,0 +1,26 @@
+{
+  "experiment": "007-similarity_targets",
+  "run_id": "run_20261019T020150842748Z_s42000_n100",
+  "seed_start": 42000,
+  "n_independent_seeds": 100,
+  "length": 128,
+  "cases": [
+    "level_clone",
+    "shared_factor",
+    "lagged_factor",
+    "volatility_clone"
+  ],
+  "methods": [
+    "raw_price_rms",
+    "rebased_price_rms",
+    "return_rms",
+    "pearson",
+    "pls_h1",
+    "legendre_h1",
+    "max_lag3_correlation",
+    "volatility_log_ratio"
+  ],
+  "selection": "Fixed in advance; no tuning",
+  "python": "3.11.17",
+  "numpy": "2.4.6"
+}

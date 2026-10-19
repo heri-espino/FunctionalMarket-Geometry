@@ -1,0 +1,11 @@
+{
+  "market_geometry/figures/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/price_level_invariance.png": "7d6dc683d9a6942464501810f35e4b6ef420f370ccb9b7181833905a25eb2e49",
+  "market_geometry/figures/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/price_level_invariance.svg": "be1e27bb4e909eb8299d14401dd944a72bc5dad53ef81053f9d13d61ab990fc2",
+  "market_geometry/figures/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/scenario_returns.png": "5a42a9f97ff3d06a7abb133058e58068660687c0d08e13fd7d5e25c504f2f4fd",
+  "market_geometry/figures/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/scenario_returns.svg": "380ec1fcecbacc34ab23191e45a97d28c8a73358e7c8e48b8219951b2ea8721c",
+  "market_geometry/figures/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/target_retrieval.png": "79b4c95ded619a26cd2cd0ebcc20754b9d1db870b72a1ae57ea21aefe0dba8f9",
+  "market_geometry/figures/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/target_retrieval.svg": "f35eebb3e76e069a545e58c9c9d3070ab0faa7875f138078e0615c256e1d5d4f",
+  "market_geometry/results/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/config.json": "fd0a853ed77093ba13e3ed666a4c6832ee4ca1afae5835abb5ec5ebdacf7c7d1",
+  "market_geometry/results/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/seed_level.csv": "84b80f9d68fcbc04026abe98cb3f20e6e3b8019c0a30ce01017f44a9c183db64",
+  "market_geometry/results/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/summary.csv": "9407ae7a838afb1d378808491f2e59ffd42059550505d6187a125a88337f26c7"
+}

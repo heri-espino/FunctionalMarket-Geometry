@@ -70,3 +70,67 @@ After verifying these invariances, introduce common stochastic volatility, Stude
 - Ramsay (2010), *Curve registration*, Oxford Handbook of Functional Data Analysis, DOI 10.1093/oxfordhb/9780199568444.013.9.
 - Engle (2002), *Dynamic Conditional Correlation*, Journal of Business & Economic Statistics, DOI 10.1198/073500102288618487.
 - Hyndman and Athanasopoulos, *Forecasting: Principles and Practice*, time-series cross-validation.
+
+## Archived run: run_20261019T020150842748Z_s42000_n100
+
+- 100 independent seeds, 128 observations per asset; start seed 42000. Synthetic iid Gaussian innovations.
+- [Seed-level data](../../results/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/seed_level.csv); [aggregated scores](../../results/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/summary.csv).
+
+### level_clone
+
+| Method | Retrieval fraction | Mean normalized margin |
+|---|---:|---:|
+| raw_price_rms | 0.000 | -0.160 |
+| rebased_price_rms | 1.000 | 1.000 |
+| return_rms | 1.000 | 1.000 |
+| pearson | 1.000 | 1.000 |
+| pls_h1 | 1.000 | 1.000 |
+| legendre_h1 | 1.000 | 1.000 |
+| max_lag3_correlation | 1.000 | 1.000 |
+| volatility_log_ratio | 1.000 | 1.000 |
+
+### shared_factor
+
+| Method | Retrieval fraction | Mean normalized margin |
+|---|---:|---:|
+| raw_price_rms | 0.000 | -0.159 |
+| rebased_price_rms | 0.980 | 0.548 |
+| return_rms | 1.000 | 0.556 |
+| pearson | 1.000 | 0.563 |
+| pls_h1 | 1.000 | 0.563 |
+| legendre_h1 | 0.990 | 0.518 |
+| max_lag3_correlation | 1.000 | 0.539 |
+| volatility_log_ratio | 0.770 | 0.326 |
+
+### lagged_factor
+
+| Method | Retrieval fraction | Mean normalized margin |
+|---|---:|---:|
+| raw_price_rms | 0.000 | -0.160 |
+| rebased_price_rms | 1.000 | 0.647 |
+| return_rms | 0.510 | 0.002 |
+| pearson | 0.530 | -0.001 |
+| pls_h1 | 0.980 | 0.059 |
+| legendre_h1 | 0.930 | 0.348 |
+| max_lag3_correlation | 1.000 | 1.000 |
+| volatility_log_ratio | 0.950 | 0.715 |
+
+### volatility_clone
+
+| Method | Retrieval fraction | Mean normalized margin |
+|---|---:|---:|
+| raw_price_rms | 0.000 | -0.158 |
+| rebased_price_rms | 0.790 | 0.174 |
+| return_rms | 1.000 | 0.175 |
+| pearson | 1.000 | 1.000 |
+| pls_h1 | 1.000 | 1.000 |
+| legendre_h1 | 1.000 | 1.000 |
+| max_lag3_correlation | 1.000 | 1.000 |
+| volatility_log_ratio | 0.000 | -0.817 |
+
+![price_level_invariance](../../figures/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/price_level_invariance.png)
+
+![scenario_returns](../../figures/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/scenario_returns.png)
+
+![target_retrieval](../../figures/007-similarity_targets/runs/run_20261019T020150842748Z_s42000_n100/target_retrieval.png)
+
